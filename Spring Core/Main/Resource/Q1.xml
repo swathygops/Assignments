@@ -15,14 +15,14 @@
 
 
                                        <!--      Using setter injection -->
-      <bean id="customer" class="springcoreq1.Customer">
+      <bean id="customer" class="Q1.Customer">
           <property name="customerId" value="101"/>
           <property name="customerName" value="Sarah Lance"/>
           <property name="customerContact" value="1356287935"/>
           <property name="customerAddress" ref="custAddress"/>
 
       </bean>
-      <bean id="custAddress" class="springcoreq1.Address">
+      <bean id="custAddress" class="Q1.Address">
           <property name="street" value="South Boulevard"/>
           <property name="city" value="Starling City"/>
           <property name="state" value="Washington"/>
@@ -33,13 +33,13 @@
 
 
                                 <!-- Using constructor injection -->
-    <bean id="customerCon" class = "springcoreq1.Customer">
+    <bean id="customerCon" class = "Q1.Customer">
         <constructor-arg  type ="int" value="102"/>
         <constructor-arg value="Oliver Queen"/>
         <constructor-arg value="1359862765"/>
         <constructor-arg ref="custAddressCon"/>
     </bean>
-    <bean id="custAddressCon" class="springcoreq1.Address">
+    <bean id="custAddressCon" class="Q1.Address">
         <constructor-arg value="Graymalkin Lane"/>
         <constructor-arg value="Starling City"/>
         <constructor-arg value="Washington"/>
