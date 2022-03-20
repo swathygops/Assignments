@@ -1,4 +1,4 @@
-package springcoreq2;
+package Q2;
 
 import java.util.Iterator;
 import java.util.List;
