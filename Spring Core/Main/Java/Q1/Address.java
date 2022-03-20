@@ -1,4 +1,4 @@
-package springcoreq1;
+package Q1;
 
 public class Address {
     private String street;
