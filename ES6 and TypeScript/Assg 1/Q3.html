@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>
+      Q3
+    </h2>
+    <script>
+      var Order = {
+        id: 11,
+        title: 'Pizza',
+        price: 1000,
+        printOrder() {
+          return (this.id + " " + this.title + " " + this.price);
+        },
+        getPrice() {
+          return (this.price);
+        }
+      };
+      var order1 = Object.assign(Order);
+      console.log(order1.printOrder()); 
+      console.log(order1.getPrice());
+    </script>
+  </body>
+</html>
